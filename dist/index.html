@@ -1,0 +1,22 @@
+	<html>
+		<head>
+			<title>Getting Started</title>
+			<script src="bundle.js"></script>
+		</head>
+		<body>
+			<div class="container">
+				<div class="col-12">
+					<div class="jumbotron">
+						<h1 class="display-3">Proxy Card Maker</h1>
+  					<p class="lead">Enter json data below and it will be turned into cards. The data on each card will be shown in the order it's entered in. Fields with the key 'title' will be bold and larger. Fields with the key 'flavour' will be italic and smaller. If a field with the key 'count' is present it will be ignored and if it's a number that many duplicates of the card will be made.</p>
+					</div>
+				</div>
+				<div class="col-12">
+					<textarea class="form-control" type="textarea" id="cards" rows="15"></textarea>
+					<button class="btn btn-primary" id="saveBtn">Save</button>
+				</div>
+					
+			</div>
+			
+		</body>
+	</html>

@@ -1,0 +1,143 @@
+[
+    {
+        "title": "Villager",
+        "alignment": "Town",
+        "flavor": "Here is some text to read while you wait to die.",
+        "count": 5
+    },
+    {
+        "title": "Vigilante",
+        "alignment": "Town",
+        "action": "Kill one person per game, during night."
+    },
+    {
+        "title": "Guilty Vigilante",
+        "alignment": "Town",
+        "action": "Kill one person per game, during night.",
+        "effects": "If you kill a town member you commit suicide."
+    },
+    {
+        "title": "Doctor",
+        "alignment": "Town",
+        "action": "Save one person from one kill action per night.",
+        "notes": "You cannot save the same person two nights in a row."
+    },
+    {
+        "title": "Blacksmith",
+        "alignment": "Town",
+        "action": "Choose one person to hold your armor each night.",
+        "effects": "Armor prevents one kill action one time. After this the armor is gone for the rest of the game.",
+        "notes": "The Blacksmith will not know if their armor has been used and should give it out every night during the game."
+    },
+    {
+        "title": "Investigator",
+        "alignment": "Town",
+        "action": "Check one person each night.",
+        "notes": "Check may be for allegiance or role depending on moderator."
+    },
+    {
+        "title": "Parity Investigator",
+        "alignment": "Town",
+        "action": "Check if two adjacent people have the same allegiance each night."
+    },
+    {
+        "title": "Bodyguard",
+        "alignment": "Town",
+        "action": "Protect one person from one kill action each night.",
+        "effects": "If your protection was used, both you and the killer are killed instead.",
+        "notes": "If there are multiple killers, only one dies, which one is up to the moderator."
+    },
+    {
+        "title": "Escort",
+        "alignment": "Town",
+        "action": "Block one person's night action each night.",
+				"notes": "Immune to role blocks."
+    },
+    {
+        "title": "Mayor",
+        "alignment": "Town",
+        "action": "Reveal your role to make your vote worth two votes."
+    },
+    {
+        "title": "Retributionist",
+        "alignment": "Town",
+        "action": "You may revive a dead person once per game, during night.",
+        "notes": "When this card is in play, dead people must also close their eyes during night."
+    },
+    {
+        "title": "Tracker",
+        "alignment": "Town",
+        "action": "Track one person at night to see who they visit"
+    },
+    {
+        "title": "Trapper",
+        "alignment": "Town",
+        "action": "You may setup one trap at one persons house during night, the first time that person is visited any night after the trap is set, the vistor dies.",
+        "effects": "Setting a new trap removes any previously set trap",
+				"notes": "If there are multiple visitors, only one dies, which one is up to the moderator."
+    },
+    {
+        "title": "Veteren",
+        "alignment": "Town",
+        "action": "Go on alert at the beginning of a night, three times per game.",
+				"effects": "While on alert you cannot be killed at night, and any visitors are shot.",
+				"notes": "Immune to role blocks."
+    },
+    {
+        "title": "Lookout",
+        "alignment": "Town",
+        "action": "Check one person at the end of night to see who visited them",
+				"notes": "All visitors are pointed out."
+    },
+		{
+        "title": "Mafia",
+        "alignment": "Mafia",
+        "flavor": "Here is some text to read while you wait to kill people.",
+        "count": 4
+    },
+    {
+        "title": "Blackmailer",
+        "alignment": "Mafia",
+        "action": "Silence one person each night.",
+        "effects": "A silenced person may not talk during the next day."
+    },
+    {
+        "title": "Framer",
+        "alignment": "Mafia",
+        "action": "Choose one person to frame at night, if investigated, they will appear to be mafia."
+    },
+    {
+        "title": "Consigliere",
+        "alignment": "Mafia",
+        "action": "Choose one person and check their exact role each night."
+    },
+    {
+        "title": "Consort",
+        "alignment": "Mafia",
+        "action": "Block one person's night action each night."
+    },
+    {
+        "title": "Jester",
+        "alignment": "Either",
+        "action": "After death you can kill one person during a night.",
+        "effects": "Until he kills someone, the Jester is aligned with the town; afterwards he is aligned with the Mafia."
+    },
+    {
+        "title": "Jester (Traditional)",
+        "alignment": "Self",
+        "action": "After being lynched you can kill one person who voted to lynch you during a night.",
+				"effects": "In addition to other winners, the jester wins if he is lynched during the game."
+    },
+    {
+        "title": "Survivor",
+        "alignment": "Self",
+				"action": "Put on a bulletproof vest at night, protecting you from one kill action.",
+        "effects": "In addition to other winners, the survivor wins if he lives until the end of the game."
+    },
+    {
+        "title": "Executioner",
+        "alignment": "Self",
+				"notes": "You are given a target at the beginning of the game, you must get them lynched. If your target dies during night you become a Jester (traditional).",
+        "effects": "In addition to other winners, the executioner wins if his target is lynched."
+    }
+]
