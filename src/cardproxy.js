@@ -1,5 +1,5 @@
 var jsPDF = require('jspdf');
-var defaultCards = require('./cards.json');
+
 
 // Inches
 var PAGE_W = 8.5;
@@ -13,13 +13,7 @@ var GUTTER_W = (PAGE_W - (CARDS_WIDE * CARD_W)) / 2;
 var GUTTER_H = (PAGE_H - (CARDS_HIGH * CARD_H)) / 2;
 var COLOR = true;
 
-function createPDF() {
-	try {
-		var cards = JSON.parse(document.getElementById('cards').value);
-	} catch (e) {
-		alert("JSON parse error: " + e);
-		return;
-	}
+function createPDF(cards) {
 	var doc = new jsPDF({ unit: 'in', format: 'letter' });
 	addLines(doc);
 	cards.forEach(function(card) { addCard(doc, card); });
@@ -149,9 +143,4 @@ function willFitCard(doc, text, fontSize) {
 	return doc.getStringUnitWidth(text) * doc.internal.getFontSize() / 72 < CARD_W - (TEXT_BORDER * 2);
 }
 
-window.onload = function () {
-	var button = document.getElementById('saveBtn');
-	var textarea = document.getElementById('cards');
-	button.addEventListener ("click", createPDF, false);
-	textarea.value = JSON.stringify(defaultCards, null, '\t');
-}
+module.exports = createPDF;

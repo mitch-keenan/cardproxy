@@ -23,6 +23,12 @@ module.exports = {
         loader: "file-loader" 
       },
       {
+        test: /\.svg$/,
+        loader: 'svg-url-loader'
+      }
+      /*
+      ,
+      {
         test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/, 
         loader: 'url?limit=10000&mimetype=application/font-woff'
       },
@@ -38,6 +44,7 @@ module.exports = {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, 
         loader: 'url?limit=10000&mimetype=image/svg+xml'
       }
+      */
     ]
   },
 };

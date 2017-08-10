@@ -1,4 +1,13 @@
 #saveBtn {
 	margin-top: 20px;
+	margin-bottom: 20px;
 	float: right;
+}
+
+body {
+	padding-top: 20px;
+}
+
+#cardsJSON {
+	height: 500px;
 }

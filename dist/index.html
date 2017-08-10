@@ -1,18 +1,23 @@
 	<html>
 		<head>
-			<title>Getting Started</title>
+			<title>Generic Proxy Maker</title>
+
+			<!-- Required meta tags -->
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<script src="bundle.js"></script>
+			<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jsoneditor/5.9.3/jsoneditor.min.css" /> -->
 		</head>
 		<body>
 			<div class="container">
 				<div class="col-12">
 					<div class="jumbotron">
-						<h1 class="display-3">Proxy Card Maker</h1>
+						<h1 class="display-3">Generic Proxy Maker</h1>
   					<p class="lead">Enter json data below and it will be turned into cards. The data on each card will be shown in the order it's entered in. Fields with the key 'title' will be bold and larger. Fields with the key 'flavour' will be italic and smaller. If a field with the key 'count' is present it will be ignored and if it's a number that many duplicates of the card will be made.</p>
 					</div>
 				</div>
 				<div class="col-12">
-					<textarea class="form-control" type="textarea" id="cards" rows="15"></textarea>
+					<div id="cardsJSON"></div>
 					<button class="btn btn-primary" id="saveBtn">Save</button>
 				</div>
 					
